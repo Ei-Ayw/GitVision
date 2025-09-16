@@ -73,8 +73,16 @@ const authStore = useAuthStore()
 const isLoading = ref(false)
 const errorMessage = ref('')
 
-const GITHUB_CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID
+const GITHUB_CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID || 'Ov23liWez7h2I8NENfyu'
 const GITHUB_REDIRECT_URI = import.meta.env.VITE_GITHUB_REDIRECT_URI || `${window.location.origin}/login`
+
+// 调试信息
+console.log('Environment variables:', {
+  VITE_GITHUB_CLIENT_ID: import.meta.env.VITE_GITHUB_CLIENT_ID,
+  VITE_GITHUB_REDIRECT_URI: import.meta.env.VITE_GITHUB_REDIRECT_URI,
+  GITHUB_CLIENT_ID,
+  GITHUB_REDIRECT_URI
+})
 
 const handleGitHubLogin = () => {
   isLoading.value = true

@@ -37,6 +37,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Debug environment variables
+        run: |
+          echo "VITE_GITHUB_CLIENT_ID=$VITE_GITHUB_CLIENT_ID"
+          echo "VITE_GITHUB_REDIRECT_URI=$VITE_GITHUB_REDIRECT_URI"
+        env:
+          VITE_GITHUB_CLIENT_ID: Ov23liWez7h2I8NENfyu
+          VITE_GITHUB_REDIRECT_URI: https://ei-ayw.github.io/GitVision/login
+
       - name: Build
         run: npm run build
         env:
@@ -46,6 +54,7 @@ jobs:
           VITE_API_BASE_URL: https://your-backend-api.com/api
           VITE_APP_NAME: GitVision
           VITE_APP_DESCRIPTION: GitHub仓库智能分析平台
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
