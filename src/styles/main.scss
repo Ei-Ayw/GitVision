@@ -1,0 +1,61 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-inter;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-primary;
+  background-color: $background-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// 自定义Ant Design样式覆盖
+.ant-btn-primary {
+  background-color: $repo-blue;
+  border-color: $repo-blue;
+  
+  &:hover {
+    background-color: $repo-blue-hover;
+    border-color: $repo-blue-hover;
+  }
+}
+
+.ant-card {
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+  
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+// 代码字体应用
+.code-font {
+  font-family: $font-family-mono;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+// 响应式工具类
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (max-width: $screen-md) {
+  .container {
+    padding: 0 12px;
+  }
+}

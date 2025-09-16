@@ -1,0 +1,31 @@
+// 色彩系统 - 基于产品需求文档
+$repo-blue: #4F46E5; // 主色
+$repo-blue-hover: #4338CA;
+$success-color: #10B981;
+$warning-color: #F59E0B;
+$error-color: #EF4444;
+$background-light: #FAFAFA;
+$background-dark: #1F2937;
+$text-primary: #111827;
+$text-secondary: #6B7280;
+$text-light: #E5E7EB;
+$border-color: #E5E7EB;
+$hover-background: #F3F4F6;
+
+// 字体系统
+$font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+// 尺寸系统
+$border-radius: 6px;
+$border-radius-lg: 8px;
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+// 响应式断点
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1600px;

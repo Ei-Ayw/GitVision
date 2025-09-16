@@ -1,0 +1,41 @@
+{
+  "name": "gitvision-frontend",
+  "version": "1.0.0",
+  "description": "GitHub仓库智能分析平台前端",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@antv/g2plot": "^2.4.20",
+    "@vueuse/core": "^10.9.0",
+    "ant-design-vue": "^4.2.3",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
+    "dotenv": "^17.2.2",
+    "echarts": "^5.4.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "markdown-it": "^14.0.0",
+    "nodemon": "^3.1.10",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27",
+    "vue-echarts": "^6.6.1",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "sass": "^1.69.5",
+    "typescript": "~5.2.2",
+    "unplugin-auto-import": "^0.17.4",
+    "vite": "^5.0.8"
+  }
+}
