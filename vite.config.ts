@@ -21,5 +21,21 @@ export default defineConfig({
         additionalData: `@import "@/styles/variables.scss";`
       }
     }
+  },
+  // GitHub Pages 配置
+  base: process.env.NODE_ENV === 'production' ? '/GitVision/' : '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-router', 'pinia'],
+          antd: ['ant-design-vue'],
+          charts: ['echarts', 'vue-echarts']
+        }
+      }
+    }
   }
 })

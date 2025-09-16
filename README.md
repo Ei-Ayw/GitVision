@@ -28,6 +28,12 @@ GitHub仓库智能分析平台 - 为开发者提供自动化仓库分析和智�
 - **JWT** - JSON Web Token认证
 - **Axios** - HTTP客户端
 
+## 🌐 在线体验
+
+**GitHub Pages部署**: https://ei-ayw.github.io/GitVision/
+
+> ⚠️ 注意：由于GitHub Pages只能托管静态文件，在线版本需要单独部署后端API服务。
+
 ## 📦 安装和运行
 
 ### 环境要求
@@ -131,6 +137,27 @@ npm run preview
 
 # 代码检查
 npm run lint
+```
+
+## 🚀 部署
+
+### GitHub Pages自动部署
+
+项目已配置GitHub Actions自动部署：
+
+1. **推送代码到main分支** - 自动触发构建和部署
+2. **访问部署地址** - https://ei-ayw.github.io/GitVision/
+
+详细部署说明请查看 [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### 手动部署
+
+```bash
+# 构建项目
+npm run build
+
+# 部署到任何静态文件托管服务
+# 将 dist/ 目录上传到你的服务器
 ```
 
 ## 📝 使用说明
