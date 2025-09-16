@@ -40,16 +40,17 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # 使用示例环境变量进行构建
-          VITE_GITHUB_CLIENT_ID: ${{ secrets.GITHUB_CLIENT_ID }}
-          VITE_GITHUB_CLIENT_SECRET: ${{ secrets.GITHUB_CLIENT_SECRET }}
-          VITE_GITHUB_REDIRECT_URI: https://ei-ayw.github.io/GitVision/api/auth/github/callback
+          # 生产环境变量配置
+          VITE_GITHUB_CLIENT_ID: Ov23liWez7h2I8NENfyu
+          VITE_GITHUB_REDIRECT_URI: https://ei-ayw.github.io/GitVision/login
           VITE_API_BASE_URL: https://your-backend-api.com/api
           VITE_APP_NAME: GitVision
           VITE_APP_DESCRIPTION: GitHub仓库智能分析平台
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
