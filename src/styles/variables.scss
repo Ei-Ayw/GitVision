@@ -1,16 +1,47 @@
-// 色彩系统 - 基于产品需求文档
-$repo-blue: #4F46E5; // 主色
-$repo-blue-hover: #4338CA;
-$success-color: #10B981;
-$warning-color: #F59E0B;
-$error-color: #EF4444;
-$background-light: #FAFAFA;
-$background-dark: #1F2937;
-$text-primary: #111827;
-$text-secondary: #6B7280;
-$text-light: #E5E7EB;
-$border-color: #E5E7EB;
-$hover-background: #F3F4F6;
+// GitHub风格色彩系统
+// 主色调 - GitHub经典蓝
+$github-blue: #222324; // GitHub主蓝色
+$github-blue-hover: #61666c; // 悬停状态
+$github-blue-light: #2e3031; // 浅蓝色
+$github-blue-dark: #353739; // 深蓝色
+
+// 功能色
+$success-color: #1A7F37; // GitHub成功绿
+$success-bg: #DCFCE7; // 成功背景
+$warning-color: #9A6700; // GitHub警告橙
+$warning-bg: #FEF3C7; // 警告背景
+$error-color: #CF222E; // GitHub错误红
+$error-bg: #FFEBE9; // 错误背景
+$info-color: #0969DA; // 信息蓝
+
+// 背景色
+$background-light: #FFFFFF; // 主背景
+$background-secondary: #F6F8FA; // 次要背景
+$background-tertiary: #F1F3F4; // 第三级背景
+$background-dark: #0D1117; // 深色模式背景
+$background-dark-secondary: #161B22; // 深色模式次要背景
+
+// 文本色
+$text-primary: #24292F; // 主文本
+$text-secondary: #656D76; // 次要文本
+$text-tertiary: #8B949E; // 第三级文本
+$text-light: #F0F6FC; // 浅色文本（深色模式）
+$text-muted: #6E7781; // 静音文本
+
+// 边框色
+$border-color: #D1D9E0; // 主边框
+$border-color-light: #E1E4E8; // 浅边框
+$border-color-dark: #30363D; // 深色模式边框
+
+// 交互色
+$hover-background: #F6F8FA; // 悬停背景
+$hover-background-dark: #21262D; // 深色模式悬停背景
+$active-background: #E7F3FF; // 激活背景
+$focus-border: #0969DA; // 焦点边框
+
+// 特殊色
+$accent-color: #8250DF; // 强调色（紫色）
+$accent-hover: #6F42C1; // 强调色悬停
 
 // 字体系统
 $font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

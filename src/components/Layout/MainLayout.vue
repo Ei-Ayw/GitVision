@@ -240,8 +240,8 @@ watch(
 
 .header {
   height: 64px;
-  background: white;
-  border-bottom: 1px solid $border-color;
+  background: $background-light;
+  border-bottom: 1px solid $border-color-light;
   padding: 0 24px;
   display: flex;
   align-items: center;
@@ -249,7 +249,7 @@ watch(
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: $shadow-sm;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
 }
 
 .header-left {
@@ -263,11 +263,11 @@ watch(
     gap: 8px;
     cursor: pointer;
     font-weight: 600;
-    color: $repo-blue;
+    color: $github-blue;
     font-size: 18px;
     
     &:hover {
-      opacity: 0.8;
+      color: $github-blue-hover;
     }
   }
   
@@ -331,8 +331,8 @@ watch(
 
 .sidebar {
   width: 240px;
-  background: white;
-  border-right: 1px solid $border-color;
+  background: $background-light;
+  border-right: 1px solid $border-color-light;
   display: flex;
   flex-direction: column;
   transition: width 0.2s;
@@ -350,11 +350,11 @@ watch(
       border-radius: $border-radius;
       
       &.ant-menu-item-selected {
-        background: $repo-blue;
-        color: white;
+        background: $active-background;
+        color: $github-blue;
         
         .anticon {
-          color: white;
+          color: $github-blue;
         }
       }
     }
@@ -384,7 +384,7 @@ watch(
 .main-content {
   flex: 1;
   overflow: auto;
-  background: $background-light;
+  background: $background-secondary;
 }
 
 .content-wrapper {

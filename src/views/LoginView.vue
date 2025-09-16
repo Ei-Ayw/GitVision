@@ -5,7 +5,7 @@
       <div class="brand-section">
         <div class="logo">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="8" fill="#4F46E5"/>
+            <rect width="48" height="48" rx="8" fill="#0969DA"/>
             <path d="M24 12L32 20L24 28L16 20L24 12Z" fill="white"/>
             <path d="M24 28L32 36L16 36L24 28Z" fill="white"/>
           </svg>
@@ -154,17 +154,18 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+  background: $background-secondary;
   padding: 20px;
 }
 
 .login-card {
-  background: white;
-  border-radius: 16px;
+  background: $background-light;
+  border: 1px solid $border-color-light;
+  border-radius: 12px;
   padding: 48px;
   width: 100%;
   max-width: 420px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
 }
 
 .brand-section {

@@ -32,7 +32,7 @@
         <a-card class="stat-card">
           <div class="stat-content">
             <div class="stat-icon">
-              <github-outlined style="color: #4F46E5;" />
+              <github-outlined style="color: #0969DA;" />
             </div>
             <div class="stat-info">
               <div class="stat-number">{{ repositoryStats.total || 0 }}</div>
@@ -44,7 +44,7 @@
         <a-card class="stat-card">
           <div class="stat-content">
             <div class="stat-icon">
-              <check-circle-outlined style="color: #10B981;" />
+              <check-circle-outlined style="color: #1A7F37;" />
             </div>
             <div class="stat-info">
               <div class="stat-number">{{ repositoryStats.analyzed || 0 }}</div>
@@ -56,7 +56,7 @@
         <a-card class="stat-card">
           <div class="stat-content">
             <div class="stat-icon">
-              <file-text-outlined style="color: #F59E0B;" />
+              <file-text-outlined style="color: #9A6700;" />
             </div>
             <div class="stat-info">
               <div class="stat-number">{{ reportStats.total || 0 }}</div>
@@ -68,7 +68,7 @@
         <a-card class="stat-card">
           <div class="stat-content">
             <div class="stat-icon">
-              <team-outlined style="color: #8B5CF6;" />
+              <team-outlined style="color: #8250DF;" />
             </div>
             <div class="stat-info">
               <div class="stat-number">{{ repositoryStats.contributors || 0 }}</div>
@@ -378,7 +378,8 @@ onMounted(() => {
   align-items: center;
   gap: 8px;
   padding: 12px 16px;
-  background: white;
+  background: $background-light;
+  border: 1px solid $border-color-light;
   border-radius: $border-radius;
   margin-bottom: 24px;
   
@@ -396,7 +397,9 @@ onMounted(() => {
 }
 
 .stat-card {
+  border: 1px solid $border-color-light;
   border-radius: $border-radius-lg;
+  background: $background-light;
   
   :deep(.ant-card-body) {
     padding: 20px;
@@ -481,7 +484,7 @@ onMounted(() => {
       text-decoration: none;
       
       &:hover {
-        color: $repo-blue;
+        color: $github-blue;
       }
     }
   }

@@ -20,14 +20,71 @@ body {
   min-height: 100vh;
 }
 
-// 自定义Ant Design样式覆盖
+// GitHub风格Ant Design样式覆盖
 .ant-btn-primary {
-  background-color: $repo-blue;
-  border-color: $repo-blue;
+  background-color: $github-blue;
+  border-color: $github-blue;
   
   &:hover {
-    background-color: $repo-blue-hover;
-    border-color: $repo-blue-hover;
+    background-color: $github-blue-hover;
+    border-color: $github-blue-hover;
+  }
+  
+  &:focus {
+    border-color: $focus-border;
+    box-shadow: 0 0 0 2px rgba(9, 105, 218, 0.2);
+  }
+}
+
+.ant-btn-default {
+  color: $text-primary;
+  border-color: $border-color;
+  background-color: $background-light;
+  
+  &:hover {
+    color: $github-blue;
+    border-color: $github-blue;
+    background-color: $hover-background;
+  }
+}
+
+.ant-input {
+  border-color: $border-color;
+  
+  &:hover {
+    border-color: $github-blue;
+  }
+  
+  &:focus {
+    border-color: $focus-border;
+    box-shadow: 0 0 0 2px rgba(9, 105, 218, 0.2);
+  }
+}
+
+.ant-card {
+  border: 1px solid $border-color-light;
+  background-color: $background-light;
+  
+  &:hover {
+    border-color: $border-color;
+  }
+}
+
+.ant-menu {
+  background-color: $background-light;
+  
+  .ant-menu-item {
+    color: $text-secondary;
+    
+    &:hover {
+      color: $text-primary;
+      background-color: $hover-background;
+    }
+    
+    &.ant-menu-item-selected {
+      color: $github-blue;
+      background-color: $active-background;
+    }
   }
 }
 
